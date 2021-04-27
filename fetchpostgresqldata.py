@@ -14,8 +14,8 @@ cursor.execute(
     "select device_name,battery_level,received_at from device_status;")
 rows = cursor.fetchall()
 for row in rows:
-    print('id=', row[0], ',name=', row[1], ',pwd=',
-          row[2], ',singal=', row[3], '\n')
+    print('device_name=', row[0], ',battery_level=', row[1], ',received_at=',
+          row[2] '\n')
 conn.close()
 
 conn.commit()
