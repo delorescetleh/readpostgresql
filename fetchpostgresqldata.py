@@ -15,7 +15,7 @@ cursor.execute(
 rows = cursor.fetchall()
 for row in rows:
     print('device_name=', row[0], ',battery_level=', row[1], ',received_at=',
-          row[2] '\n')
+          row[2])
 conn.close()
 
 conn.commit()
